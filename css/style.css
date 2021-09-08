@@ -1,0 +1,105 @@
+header {
+  width: 100%;
+  background: #007160;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 38px 0;
+  width: 90%;
+}
+
+header .container p {
+  font-size: 25px;
+  color: white;
+  font-family: "FuturaBT";
+}
+
+.container-banner {
+  width: 100%;
+  height: 70vh;
+  background-image: url(/assets/Banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-content {
+  width: 59%;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: flex;
+}
+
+.container-content .content-banner {
+  width: 90%;
+  flex-direction: column;
+  margin: 156px 0px 120px 0;
+}
+
+.container-content .content-banner h1 {
+  font-size: 60px;
+  font-family: "TimeBurner";
+  color: white;
+}
+
+.container-content .content-banner .content-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-content .content-banner .content-btn {
+  border-radius: 50px;
+  border: 4px solid white;
+  padding: 15px;
+  margin: 50px 0;
+  width: 35%;
+}
+
+.container-content .content-banner button {
+  font-size: 20px;
+  background: #007160;
+  color: white;
+}
+
+.container-content .content-banner .produto-img {
+  margin-top: auto;
+  width: 100%;
+  margin-left: -80px;
+}
+.container-content .content-banner .produto-img img {
+  width: 100%;
+  bottom: 0;
+}
+
+.img-banner {
+  margin-top: auto;
+  width: 100%;
+  bottom: 0;
+  margin-bottom: -4px;
+}
+
+.img-banner img {
+  width: 100%;
+  bottom: 0;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "FuturaBT";
+  src: local(FuturaBT), url(../fonts/Futura\ Heavy\ font.ttf);
+}
+
+@font-face {
+  font-family: "TimeBurner";
+  src: local(TimeBurner), url(../fonts/timeburnerbold.ttf);
+}
+
+@font-face {
+  font-family: "FuturaBK";
+  src: local(FuturaBK), url(../fonts/Futura\ Book\ font.ttf);
+}
