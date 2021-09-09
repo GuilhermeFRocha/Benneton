@@ -10,81 +10,281 @@ header {
   align-items: center;
   padding: 38px 0;
   width: 90%;
+  align-items: center;
+}
+
+header .container .logo {
+  width: 245px;
+  height: 50px;
+}
+
+header .container .menu {
+  width: 38px;
+  height: 20px;
 }
 
 header .container p {
-  font-size: 25px;
+  font-size: 18px;
   color: white;
   font-family: "FuturaBT";
 }
 
-.container-banner {
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-container .content {
+  position: relative;
+  height: 500px;
+  margin-left: 80px;
+}
+
+.grid-container .content > img {
+  width: 400px;
+  position: absolute;
+  left: 0;
+  bottom: 100px;
+  z-index: 3;
+}
+
+.grid-container .content h1 {
+  padding-left: 60px;
+  font-family: "TimeBurner";
+  color: #fff;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.grid-container .content h1 span {
+}
+
+.grid-container .content button {
+  margin-left: 60px;
+  padding: 15px 20px;
+  background: transparent;
+  color: #bcd9d3;
+  border: 1px solid #bcd9d3;
+  border-radius: 30px;
+  font-family: "FuturaBT";
+}
+
+.grid-container .content button img {
+  width: 25px;
+  margin-left: 40px;
+}
+
+.banner1 {
+  background: #007160;
+  position: relative;
+}
+
+.banner1 > img {
+  position: absolute;
+  bottom: -90px;
+  width: 400px;
+}
+
+.banner1 > .vetor2 {
+  top: 0;
+  width: 500px;
+  z-index: 2;
+  transform: translateX(65%);
+}
+
+.image-banner {
+  position: relative;
+  height: 100%;
+}
+
+.image-banner img {
+  position: absolute;
+  width: 500px;
+  bottom: -38px;
+  right: 0;
+}
+
+.container-card {
   width: 100%;
-  height: 70vh;
-  background-image: url(/assets/Banner.png);
-  background-position: center;
+  background: #d0e7d0;
+}
+
+.cards {
+  display: flex;
+  width: 78%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.min-card {
+  width: 40%;
+  margin: 70px 0px 48px 0px;
+  padding: 0px 35px;
+  text-align: center;
+}
+
+.min-card h1 {
+  font-family: "TimeBurner";
+  color: #77ab9e;
+  font-size: 36px;
+}
+
+.min-card p {
+  color: #005f4d;
+  font-family: "FuturaBK";
+  font-size: 16px;
+}
+
+.carousel-button {
+  border-radius: 50% !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.img-card {
+  position: absolute;
+  margin-top: -150px;
+}
+
+.img-card img {
+  width: 200px;
+  height: 450px;
+}
+
+.container-description {
+  width: 100%;
+  background-image: url(/assets/Benetton\ 15\ anos.png);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
-.container-content {
-  width: 59%;
+.description-img {
+  background-image: url(../assets/Objeto\ Inteligente\ de\ Vetor3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 119%;
+  position: absolute;
+  width: 620px;
+  margin-top: -25px;
+}
+
+.container-description .description-img img {
+  width: 100%;
+  height: 840px;
+  margin-top: -35px;
+}
+
+.content-description {
+  width: 78%;
   margin: 0 auto;
-  justify-content: space-between;
   display: flex;
+  justify-content: center;
+  gap: 140px;
+  padding: 200px 0px 180px 0px;
 }
 
-.container-content .content-banner {
-  width: 90%;
-  flex-direction: column;
-  margin: 156px 0px 120px 0;
+.description-title {
+  color: #fff;
+  position: relative;
 }
 
-.container-content .content-banner h1 {
-  font-size: 60px;
+.description-title img {
+  margin-right: 10px;
+  width: 50px;
+  height: 55px;
+}
+
+.description-title h1 {
   font-family: "TimeBurner";
-  color: white;
 }
 
-.container-content .content-banner .content-btn {
+.description-title p {
+  font-family: "FuturaBK";
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.description {
+  width: 58%;
+  color: #fff;
+  text-align: justify;
+  font-family: "FuturaBK";
+  line-height: 1.4rem;
+}
+
+.container-perfil {
+  width: 100%;
+  background: #005f4d;
+}
+
+.content-perfil {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.text-perfil {
+  margin-top: 45px;
+  width: 57%;
+}
+
+.text-perfil h1 {
+  color: #fff;
+  font-family: "TimeBurner";
+  font-size: 40px;
+}
+
+.text-perfil p {
+  color: white;
+  font-family: "FuturaBK";
+  font: 25px;
+}
+
+.img-perfil {
+  position: relative;
+}
+
+.img-perfil img {
+  width: 100%;
+  margin-top: -40px;
+  position: relative;
+}
+
+.sub-img img {
+  width: 100%;
+}
+
+.fita {
+  width: 62%;
+  margin-left: 50%;
+}
+
+.fita img {
+  width: 67%;
+  position: absolute;
+  top: 260px;
+  right: -92px;
+}
+
+.container-produtos {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container-produtos h1 {
+  text-align: center;
+}
+
+.content-produtos {
   display: flex;
   justify-content: space-between;
 }
 
-.container-content .content-banner .content-btn {
-  border-radius: 50px;
-  border: 4px solid white;
-  padding: 15px;
-  margin: 50px 0;
-  width: 35%;
-}
-
-.container-content .content-banner button {
-  font-size: 20px;
-  background: #007160;
-  color: white;
-}
-
-.container-content .content-banner .produto-img {
-  margin-top: auto;
-  width: 100%;
-  margin-left: -80px;
-}
-.container-content .content-banner .produto-img img {
-  width: 100%;
-  bottom: 0;
-}
-
-.img-banner {
-  margin-top: auto;
-  width: 100%;
-  bottom: 0;
-  margin-bottom: -4px;
-}
-
-.img-banner img {
-  width: 100%;
-  bottom: 0;
+.content-produtos img {
+  width: 200px;
+  height: 400px;
 }
 
 /* Fonts */

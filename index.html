@@ -5,8 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="/css/global.css">
   <link rel="stylesheet" href="/css/style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
   <title>Benneton</title>
 </head>
 
@@ -15,35 +20,161 @@
     <div class="container">
       <p>(13) 97403-5380</p>
 
-      <img src="/assets/Logo.png" alt="">
+      <img class="logo" src="/assets/Logo.png" alt="">
 
-      <img src="/assets/Menu.png" alt="">
+      <img class="menu" src="/assets/Menu.png" alt="">
     </div>
   </header>
 
-  <section class="container-banner">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button class="carousel-button" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+        class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button class="carousel-button" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button class="carousel-button" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active banner1">
 
-    <div class="container-content">
+        <img src="./assets/Objeto Inteligente de Vetor copiar 2.png" alt="">
+        <img class="vetor2" src="./assets/Objeto Inteligente de Vetor.png" alt="">
 
-      <div class="content-banner">
-        <div>
-          <h1>Pele mais clara <br> bonita e radiante</h1>
+        <div class="container grid-container">
+          <div class="content">
+            <h1>Pele mais clara<br><span>bonita</span> e <span>radiante</span></h1>
+            <button>
+              comprar agora
+              <img src="./assets/right-arrow.png" alt="">
+            </button>
+            <img src="./assets/produto-banner.png" alt="">
+          </div>
+          <div class="image-banner">
+            <img src="./assets/perfil-banner.png" alt="">
+          </div>
         </div>
-        <div class="content-btn">
-          <button> comprar agora </button>
-          <img src="/assets/right-arrow.png" alt="">
-        </div>
 
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+
+  <div class="img-card">
+    <img src="./assets/Folha 01.png" alt="">
+  </div>
+
+
+  <section class="container-card">
+    <div class="cards">
+
+      <div class="min-card">
+        <h1>Próposito</h1>
+        <p>Cuidar, Proteger e Transformar, proporcionando Qualidade de Vida à todos</p>
+      </div>
+
+      <div class="min-card">
+        <h1>Missão</h1>
+        <p>Oferecer um atendimento sério, dinâmico e competente, voltado para necessidade individual de cada cliente.
+        </p>
+      </div>
+
+      <div class="min-card">
+        <h1>Valores</h1>
+        <p>Ética, Responsabilidade, Transparência, Competência e Organização.</p>
       </div>
 
     </div>
 
+  </section>
+
+  <section class="container-description">
+
+    <div class="description-img">
+
+    </div>
+
+    <div class="content-description">
+      <div class="description-title">
+        <p> <img src="/assets/play-button-arrowhead.png" alt="">Play video </p>
+
+        <h1>Quem <br> Somos</h1>
+      </div>
+
+
+      <div class="description">
+        <p>A Benetton fórmulas personalizadas é parte da história de nossa região, desde 2006 é destaque no segmento de
+          farmácias de manipulação, atendendo os clientes com a mais completa linha de medicamentos, produtos
+          cosméticos, fitoterápicos e serviços diferenciados. Uma farmácia de manipulação que busca modernizar-se, a
+          todo momento, com equipamentos de última geração e procedimentos de qualidade atuais, comprometendo-se com as
+          necessidades das prescrições médicas de todas as especialidades de forma personalizada. O trabalho da Benetton
+          é baseado no rigor técnico e na eficiência, onde todos os procedimentos são padronizados, validados e
+          auditados periodicamente, visando qualidade total. Em 2012 com grande alegria inauguramos nossa filial na
+          Cidade de Mongaguá.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-perfil">
+    <div class="content-perfil">
+      <div class="text-perfil">
+        <h1>Dra. Patrícia
+          Benetton</h1>
+
+        <p>Farmacêutica Magistral</p>
+
+        <p>Formada pela Universidade Católica <br> de Santos faz 2001 anos</p>
+
+        <p>Especialista em Farmacologia Clínica <br> pela universidade Católica de Santos</p>
+
+        <p>MBA em Estética pelo Instituto de <br> Cosmetologia (Cosmetologia)</p>
+
+      </div>
+
+      <div class="img-perfil">
+        <img src="./assets/Polígono 1.png" alt="">
+        <div class="fita">
+          <img src="./assets/Fita.png" alt="">
+        </div>
+      </div>
     </div>
 
   </section>
 
 
 
+  <script src="./script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+    integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous">
+  </script> -->
 </body>
 
 </html>
+
+<!-- <div class="container-produtos">
+
+  <h1>Nossas formulas</h1>
+
+  <div class="content-produtos">
+    <img src="./assets/Produto.png" alt="">
+    <img src="./assets/Produto2.png" alt="">
+    <img src="./assets/Produto3.png" alt="">
+  </div>
+
+  <h1>Pós Botox</h1>
+  <p>Um elixir exclusivo, desenvolvido para prolongar os efeitos do tratamento da toxina botulínica! </p>
+
+</div> -->
