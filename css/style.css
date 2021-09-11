@@ -135,7 +135,7 @@ header .container p {
   font-size: 16px;
 }
 
-.carousel-button {
+#carousel-button {
   border-radius: 50% !important;
   width: 10px !important;
   height: 10px !important;
@@ -285,6 +285,136 @@ header .container p {
 .content-produtos img {
   width: 200px;
   height: 400px;
+}
+
+.container-produto {
+  width: 100%;
+  background: #d0e7d0;
+  background-image: url(../assets/Fundo-produto.png);
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.content-produto {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 130px 0;
+  margin-top: -30px;
+}
+
+.content-produto img {
+  width: 140px;
+  height: 450px;
+}
+
+.content-produto .img-produto2 {
+  width: 250px;
+  height: 450px;
+}
+
+.content-produto .img-produto3 {
+  width: 180px;
+  height: 450px;
+}
+.content-produto h1 {
+  font-family: "TimeBurner";
+  font-weight: bold;
+  color: #005f4d;
+  padding-bottom: 20px;
+}
+
+.description-produto {
+  width: 28%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content-produto .carousel-item h1 {
+  padding-top: 20px;
+  padding-bottom: 0px;
+  margin-bottom: 5px;
+}
+.content-produto p {
+  color: #005f4d;
+  font-family: "FuturaBK";
+}
+
+.description-produto .btn-produto {
+  padding: 14px 25px;
+  background: transparent;
+  color: #005f4d;
+  border: 1px solid #005f4d;
+  border-radius: 30px;
+  font-family: "FuturaBT";
+}
+
+.description-produto .btn-produto img {
+  width: 25px;
+  height: 20px;
+  margin-left: 40px;
+}
+.img-folha {
+  position: absolute;
+  margin-top: -359px;
+  margin-left: -35px;
+}
+
+.img-folha img {
+  width: 260px;
+  height: 450px;
+}
+
+.container-blog {
+  width: 100%;
+}
+
+.container-blog h1 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #005f4d;
+  font-family: "TimeBurner";
+  font-size: 50px;
+}
+
+.content-blog {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.img-vertical {
+  width: 100%;
+}
+
+.img-vertical h2 {
+  font-family: "TimeBurner";
+  color: #005f4d;
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+.img-vertical img {
+  width: 100%;
+}
+
+.img-grid-blog img {
+  max-width: 154px;
+}
+
+.post-blog h2 {
+  font-family: "TimeBurner";
+  color: #005f4d;
+  font-size: 24px;
+}
+
+.post-blog p {
+  font-family: "FuturaBK";
+  font-weight: bold;
 }
 
 /* Fonts */
