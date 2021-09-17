@@ -707,6 +707,10 @@ header .container p {
 /* Responsive */
 
 @media (max-width: 1025px) {
+  .drop-menu-close {
+    right: 45px;
+  }
+
   .grid-container .content > img {
     bottom: 45px;
   }
@@ -717,6 +721,10 @@ header .container p {
 }
 
 @media (max-width: 768px) {
+  .drop-menu-close {
+    right: 45px;
+  }
+
   .container grid-container {
     margin: 0 auto;
   }
