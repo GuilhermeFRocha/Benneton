@@ -15,7 +15,7 @@ header .container-header {
 .search-bar {
   display: flex;
   justify-content: space-between;
-  margin-left: 60px;
+
   padding: 10px 15px;
   border: 2px solid #fff;
   border-radius: 60px;
@@ -54,6 +54,197 @@ header .container-header {
 
 .btn-flutuante p {
   margin: 0;
+}
+
+.container-menu {
+  width: 100%;
+  background: #dcead9;
+}
+
+.content-menu {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px;
+}
+
+.content-menu li {
+  color: #005f4d;
+  font-family: "FuturaBT";
+  font-size: 14px;
+  list-style: none;
+}
+
+.container-nutricao {
+  width: 100%;
+  background: #fff;
+}
+
+.content-nutricao {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  padding: 40px 0px;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* .container-text p {
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 5px 15px;
+  width: 10px;
+} */
+
+.container-text .img-text img {
+  width: 100%;
+}
+
+.container-text .img-text .sub-title {
+  text-align: center;
+  margin-top: -17px;
+  width: 100%;
+}
+
+.container-text .img-text .sub-title p {
+  margin: 0 auto;
+  width: 40%;
+  text-align: center;
+  position: relative;
+  border-radius: 30px;
+  background: #d0e7d0;
+  color: #005f4d;
+  padding: 3px 18px;
+}
+
+.description {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.description h1 {
+  color: #005f4d;
+  font-family: "FuturaBT";
+  padding-left: 50px;
+}
+
+.sub-description {
+  display: flex;
+  justify-content: center;
+}
+
+.sub-description p {
+  color: #005f4d;
+  font-family: "FuturaBT";
+  text-align: justify;
+}
+
+.content-nutricao p {
+  padding-top: 15px;
+  font-family: "FuturaBK";
+}
+
+.content-text {
+  width: 93%;
+}
+
+.container-geral-post {
+  width: 100%;
+  background: #d0e7d0;
+  padding-bottom: 90px;
+}
+
+.container-geral-post h1 {
+  text-align: center;
+  padding: 40px 0px;
+  color: #005f4d;
+  font-family: "TimeBurner";
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.container-images {
+  flex-direction: column;
+  width: 100%;
+}
+
+.container-images img {
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.container-post {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.card-post {
+  text-align: center;
+}
+
+.card-post h3 {
+  width: 90%;
+  margin: 0 auto;
+  color: #005f4d;
+  font-family: "FuturaBT";
+  padding-top: 5px;
+}
+
+.card-post .img-post {
+  width: 100%;
+}
+.card-post .img-post img {
+  width: 100%;
+}
+
+.sub-description-post {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.sub-description-post p {
+  font-size: 12px;
+  color: #005f4d;
+  font-family: "FuturaBK";
+}
+
+.icons-post {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: center;
+  gap: 15px;
+  padding-top: 20px;
+}
+
+.container-categoria {
+  width: 100%;
+}
+
+.container-categoria h1 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.content-categoria {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.slides {
+  display: grid;
+}
+
+.slides p {
+  margin-top: -150px;
+  color: #fff;
 }
 
 /* Fonts */
