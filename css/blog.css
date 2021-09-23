@@ -223,13 +223,41 @@ header .container-header {
   padding-top: 20px;
 }
 
+.img-contato {
+  position: absolute;
+  width: 38%;
+  margin-top: -20%;
+  margin-left: -10%;
+}
+
+.img-contato img {
+  width: 100%;
+}
+
+.fita {
+  width: 100%;
+  overflow: hidden;
+}
+
+.fita img {
+  width: 25%;
+  position: absolute;
+  right: -65px;
+  top: -250px;
+}
+
 .container-categoria {
   width: 100%;
+  margin: 20px 0 60px 0;
+  position: relative;
+  contain: layout;
 }
 
 .container-categoria h1 {
   text-align: center;
   padding: 20px 0;
+  color: #005f4d;
+  font-family: "TimeBurner";
 }
 
 .content-categoria {
@@ -247,6 +275,74 @@ header .container-header {
   color: #fff;
 }
 
+div.your-class {
+  position: relative;
+  padding: 0 15px;
+}
+
+div.item-slide {
+  padding: 10px;
+}
+
+div.content-item {
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  grid-column: auto;
+}
+
+div.content-item p {
+  color: black;
+}
+
+button.slick-button {
+  border: 1px solid #005f4d;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 45px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  padding: 0;
+  transition: all 0.3s;
+  margin-top: 120px;
+}
+
+button.slick-button svg {
+  fill: #707070;
+  width: 25px;
+}
+
+button.slick-button:hover {
+  z-index: 100;
+}
+
+button.slick-button:hover svg {
+  fill: #fff;
+}
+
+button.slick-button.slick-prev {
+  left: 42%;
+  border-radius: 30px;
+  border-color: #005f4d;
+  width: 7%;
+}
+
+button.slick-button.slick-next {
+  right: 42%;
+  border-radius: 30px;
+  border-color: #005f4d;
+  width: 7%;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
 /* Fonts */
 
 @font-face {
@@ -262,4 +358,28 @@ header .container-header {
 @font-face {
   font-family: "FuturaBK";
   src: local(FuturaBK), url(../fonts/Futura\ Book\ font.ttf);
+}
+
+@media (max-width: 1024px) {
+  .fita img {
+    width: 31%;
+    position: absolute;
+    right: -95px;
+    top: -271px;
+  }
+}
+
+@media (max-width: 768px) {
+  .img-contato {
+    width: 40%;
+    margin-top: -23%;
+    margin-left: -10%;
+  }
+
+  .fita img {
+    width: 37%;
+
+    top: 1050px;
+    right: -90px;
+  }
 }
