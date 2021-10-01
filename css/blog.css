@@ -170,8 +170,59 @@ header .container-header {
 }
 
 .container-images img {
-  padding-bottom: 5px;
   width: 100%;
+  height: 100%;
+}
+
+.bg-image {
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.filter {
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(0, 95, 77, 1) 81%
+  );
+}
+
+.informacao {
+  width: 100%;
+  min-height: 90px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  text-align: center;
+}
+
+.informacao p {
+  font-family: "FuturaBT";
+  padding: 0px;
+  width: 55%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 15px;
+  background: #d0e7d0;
+  color: #005f4d;
+  padding: 4px 0px;
+}
+
+.informacao h2 {
+  font-family: "FuturaBT";
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
 }
 
 .container-post {
@@ -196,6 +247,26 @@ header .container-header {
 
 .card-post .img-post {
   width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.card-post .img-post div {
+  width: 50%;
+  margin: 0 auto;
+  position: absolute;
+  top: 75%;
+  right: 25%;
+
+  border-radius: 30px;
+  background: #fff;
+}
+
+.card-post .img-post div p {
+  color: #005f4d;
+  font-family: "FuturaBT";
+  font-size: 12px;
+  padding: 5px 0px;
 }
 .card-post .img-post img {
   width: 100%;
@@ -212,6 +283,7 @@ header .container-header {
   font-size: 12px;
   color: #005f4d;
   font-family: "FuturaBK";
+  padding-top: 20px;
 }
 
 .icons-post {
@@ -289,10 +361,22 @@ div.content-item {
   color: #fff;
   padding: 10px;
   grid-column: auto;
+  position: relative;
 }
 
-div.content-item p {
-  color: black;
+div.content-item div {
+  width: 50%;
+  margin: 0 auto;
+  position: absolute;
+  top: 40%;
+  right: 25%;
+}
+
+div.content-item div p {
+  color: #fff;
+  font-size: 18px;
+  font-family: "FuturaBT";
+  text-align: center;
 }
 
 button.slick-button {
@@ -343,6 +427,102 @@ button.slick-button.slick-next {
   width: 100%;
 }
 
+.background {
+  width: 100%;
+}
+
+.background img {
+  width: 100%;
+}
+
+.form-container {
+  width: 100%;
+  background: #dcead9;
+  margin-top: -5px;
+  padding-bottom: 50px;
+}
+
+.form-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form-content p {
+  text-align: center;
+  padding: 30px 0;
+  color: #005f4d;
+  font-family: "FuturaBT";
+}
+
+.form-content .form-input {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+}
+
+.form-content .form-input input {
+  padding: 14px 25px;
+  background: #fff;
+  color: #005f4d;
+  border-radius: 30px;
+  font-family: "FuturaBT";
+  width: 35%;
+  font-size: 18px;
+}
+
+.btn-contato {
+  border: 1px solid white;
+  border-radius: 40px;
+  padding: 19px 25px;
+  background: #005f4d;
+  width: 20%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-contato button {
+  background: #005f4d;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "FuturaBK";
+}
+
+.container-rodape {
+  width: 100%;
+  margin: 40px 0;
+}
+
+.content-rodape {
+  align-items: center;
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.img-rodape {
+  width: 27%;
+}
+
+.img-rodape img {
+  width: 100%;
+}
+
+.desc-rodape {
+  flex-direction: column;
+  width: 65%;
+}
+
+.desc-rodape p {
+  margin-bottom: 0rem;
+  color: #005f4d;
+  font-family: "FuturaBK";
+  line-height: normal;
+  font-size: 18px;
+}
+
 /* Fonts */
 
 @font-face {
@@ -361,11 +541,15 @@ button.slick-button.slick-next {
 }
 
 @media (max-width: 1024px) {
+  header .container-header {
+    gap: 32px;
+  }
+
   .fita img {
     width: 31%;
     position: absolute;
-    right: -95px;
-    top: -271px;
+    right: -90px;
+    top: -218px;
   }
 }
 
@@ -381,5 +565,178 @@ button.slick-button.slick-next {
 
     top: 1050px;
     right: -90px;
+  }
+
+  .search-bar {
+    width: 30%;
+  }
+
+  .container-header div a img {
+    width: 100%;
+  }
+
+  .btn-flutuante {
+    position: fixed;
+    z-index: 100;
+    border: 1px solid #d0e7d0;
+    border-radius: 30px;
+    background: #deeede;
+    font-family: "FuturaBT";
+    color: #005f4d;
+    right: 100px;
+    bottom: 100px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .btn-flutuante p {
+    margin: 0;
+    width: -webkit-fill-available;
+  }
+
+  .container-header div a .whats {
+    width: 20%;
+  }
+
+  .search-bar img {
+    margin-left: -45px;
+  }
+
+  .content-menu li {
+    font-size: 12px;
+  }
+
+  .card-post .img-post div {
+    top: 67%;
+  }
+
+  div.content-item div p {
+    font-size: 14px;
+  }
+
+  .btn-contato {
+    width: 25%;
+  }
+
+  .btn-contato img {
+    width: 32%;
+  }
+
+  .btn-contato button {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .search-bar {
+    display: none;
+  }
+
+  .btn-flutuante p {
+    display: none;
+  }
+
+  .container-header div a .whats {
+    width: 100%;
+  }
+
+  .btn-flutuante {
+    background: transparent;
+    border: none;
+    right: 0;
+  }
+
+  .sub-description-post p {
+    padding-top: 5px;
+  }
+
+  .container-post {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .img-contato img {
+    display: none;
+  }
+
+  .card-post .img-post div {
+    top: 80%;
+  }
+
+  div.content-item {
+    padding: 0px;
+  }
+
+  div.content-item div p {
+    font-size: 10px;
+  }
+
+  .container-categoria {
+    margin: 20px 0 20px 0px;
+  }
+
+  button.slick-button {
+    height: 25px;
+  }
+
+  button.slick-button {
+    margin-top: 70px;
+  }
+
+  .container-images {
+    display: none;
+  }
+
+  .sub-description p {
+    font-size: 12px;
+  }
+
+  .container-text .img-text .sub-title {
+    margin-top: -16px;
+  }
+
+  .container-text .img-text .sub-title p {
+    font-size: 14px;
+  }
+
+  .container-geral-post {
+    padding-bottom: 50px;
+  }
+
+  .form-content .form-input {
+    flex-direction: column;
+  }
+  .form-content .form-input input {
+    width: 83%;
+    margin: 0px;
+  }
+  .btn-contato {
+    width: 83%;
+    margin-top: 0px;
+    padding: 14px 25px;
+  }
+
+  .btn-contato img {
+    width: 15%;
+  }
+
+  .content-rodape {
+    gap: 5%;
+  }
+
+  .desc-rodape p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .content-menu {
+    width: 90%;
+    gap: 30px;
+  }
+  .content-menu li {
+    font-size: 10px;
   }
 }
